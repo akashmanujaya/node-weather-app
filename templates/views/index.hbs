@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    
+</head>
+
+<body>
+    <div id="page">
+		
+        {{>header}}
+        <div class="dotted_line"></div>
+        <div id="main">
+        
+        	<div class="main_left">
+            	<img src="../assets/sample_image.jpg" alt="Transparent Blue by BryantSmith.com" />
+                <h1>My name is {{name}}</h1>
+                <h3>a longer sub slogan goes right here.</h3>
+            </div>
+            
+           	<div class="main_right">
+                <h2>Find your Location Forecast</h2>
+
+                <h5>Please enter your location</h5>
+                <form>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="search" id="search" placeholder="Enter you location">
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+                <p id="errorMessage"></p>
+                <p id="location"></p>
+                <p id="latitude"></p>
+                <p id="lognitude"></p>
+                <p id="tempreture"></p>
+                <p id="humidity"></p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas est mi, consequat eu viverra vel, mattis quis risus. Sed iaculis nunc a enim malesuada vel ornare ante euismod. Donec euismod, enim malesuada gravida sollicitudin, mauris ante commodo massa, a egestas leo erat at lorem. Aenean justo sapien, porta tempor placerat in, iaculis id leo. Quisque non erat ut nibh semper feugiat hendrerit sed neque. Vestibulum eget lectus a erat accumsan ornare non sed nulla. Vestibulum vitae turpis vitae dolor hendrerit pretium quis in odio. Praesent scelerisque, purus ut venenatis elementum, nisl felis ultrices ante, vitae rhoncus lacus massa ut enim. In sed mi arcu. Quisque ultricies pellentesque velit, feugiat viverra est pharetra ac. Quisque id risus eget mi gravida vehicula eget in neque. Integer consectetur, mauris a venenatis dictum, nibh urna tincidunt purus, eu rhoncus ligula erat ac eros. Integer vehicula, arcu a adipiscing sollicitudin, neque erat mollis risus, eget porttitor magna ligula ac justo. Nullam lobortis tortor vitae erat commodo sodales eget non velit. Duis erat tellus, cursus eu egestas id, auctor sit amet lectus. Suspendisse pellentesque ante a leo dignissim at dignissim nibh consectetur. Vestibulum feugiat mattis velit eu luctus. Aliquam nulla leo, ullamcorper feugiat posuere vitae, fringilla eu nibh. </p>
+
+            </div>
+            
+           	<div class="main_bottom"></div>
+            
+        </div>
+        
+        
+        <div class="dotted_line"></div>
+        {{>footer}}
+        
+    </div>
+
+    {{!-- js --}}
+    <script src="/js/app.js"></script>
+
+</body>
+</html>
