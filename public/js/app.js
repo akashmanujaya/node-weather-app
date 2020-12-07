@@ -14,7 +14,7 @@ const humidity = document.getElementById('humidity')
 wheatherFrom.addEventListener('submit', (e) => {
 
     e.preventDefault() 
-    
+
     errorMessage.textContent = 'Loading Data,,,,,,,,,'
     place.textContent = ''
     latitude.textContent = ''
@@ -22,7 +22,7 @@ wheatherFrom.addEventListener('submit', (e) => {
     tempreture.textContent = ''
     humidity.textContent = ''
 
-    fetch('http://localhost/weather?address=' + search.value).then((response) =>{ 
+    fetch('/weather?address=' + search.value).then((response) =>{ 
         response.json().then((data) =>{
             if(data.error){
                 errorMessage.textContent = data.error
